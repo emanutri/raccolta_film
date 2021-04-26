@@ -71,12 +71,9 @@
 
 					</form>
 
-		    
-		    
 			<!-- end card-body -->			   
 		    </div>
 		</div>	
-	
 	
 	<!-- end container -->	
 	</main>

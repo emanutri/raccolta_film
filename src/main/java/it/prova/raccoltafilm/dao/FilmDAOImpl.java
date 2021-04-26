@@ -69,7 +69,8 @@ public class FilmDAOImpl implements FilmDAO {
 		Map<String, Object> paramaterMap = new HashMap<String, Object>();
 		List<String> whereClauses = new ArrayList<String>();
 
-		StringBuilder queryBuilder = new StringBuilder("select f from Film f join fetch f.regista r where f.id = f.id ");
+		StringBuilder queryBuilder = new StringBuilder(
+				"select f from Film f join fetch f.regista r where f.id = f.id ");
 
 		if (StringUtils.isNotEmpty(example.getTitolo())) {
 			whereClauses.add(" f.titolo  like :titolo ");

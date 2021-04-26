@@ -40,14 +40,13 @@ public class PrepareDeleteRegistaServlet extends HttpServlet {
 
 		try {
 
-			if (!registaInstance.caricaSingoloElementoConFilms(Long.parseLong(idParameter)).getFilms()
-					.isEmpty()) {
+			if (!registaInstance.caricaSingoloElementoConFilms(Long.parseLong(idParameter)).getFilms().isEmpty()) {
 				request.setAttribute("errorMessageEager",
 						"Attenzione impossibile rimuovere regista, sono presenti film a suo nome.");
-				
+
 				request.setAttribute("registi_list_attribute",
 						MyServiceFactory.getRegistaServiceInstance().listAllElements());
-				
+
 				request.getRequestDispatcher("/regista/list.jsp").forward(request, response);
 				return;
 			}

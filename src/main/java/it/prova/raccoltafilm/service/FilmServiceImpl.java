@@ -82,7 +82,7 @@ public class FilmServiceImpl implements FilmService {
 			entityManager.getTransaction().rollback();
 			e.printStackTrace();
 			throw e;
-			
+
 		} finally {
 			LocalEntityManagerFactoryListener.closeEntityManager(entityManager);
 		}

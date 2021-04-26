@@ -14,10 +14,11 @@ import it.prova.raccoltafilm.service.MyServiceFactory;
 @WebServlet("/PrepareInsertFilmServlet")
 public class PrepareInsertFilmServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		try {
-			//metto un bean 'vuoto' in request perché per la pagina risulta necessario
+			// metto un bean 'vuoto' in request perché per la pagina risulta necessario
 			request.setAttribute("insert_film_attr", new Film());
 			// questo mi serve per la select di registi in pagina
 			request.setAttribute("registi_list_attribute",

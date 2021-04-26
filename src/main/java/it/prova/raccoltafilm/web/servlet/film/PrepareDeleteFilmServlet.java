@@ -25,7 +25,7 @@ public class PrepareDeleteFilmServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		String filmId = request.getParameter("idFilm");
 
 		FilmService filmService = MyServiceFactory.getFilmServiceInstance();

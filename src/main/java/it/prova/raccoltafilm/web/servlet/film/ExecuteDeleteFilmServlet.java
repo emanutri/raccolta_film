@@ -25,7 +25,7 @@ public class ExecuteDeleteFilmServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		String idFilmParameter = request.getParameter("idDeleteInput");
 
 		FilmService filmService = MyServiceFactory.getFilmServiceInstance();

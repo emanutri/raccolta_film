@@ -25,51 +25,48 @@
 		        <h5>Ricerca elementi</h5> 
 		    </div>
 		    <div class='card-body'>
-
-					<form method="post" action="ExecuteSearchRegistaServlet" >
-					
-						<div class="form-row">
-							<div class="form-group col-md-6">
-								<label>Nome</label>
-								<input type="text" name="nome" id="nome" class="form-control" placeholder="Inserire il nome" >
-							</div>
-							
-							<div class="form-group col-md-6">
-								<label>Cognome</label>
-								<input type="text" name="cognome" id="cognome" class="form-control" placeholder="Inserire il cognome" >
-							</div>
+	
+				<form method="post" action="ExecuteSearchRegistaServlet" >
+				
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label>Nome</label>
+							<input type="text" name="nome" id="nome" class="form-control" placeholder="Inserire il nome" >
 						</div>
 						
-						<div class="form-row">	
-							<div class="form-group col-md-6">
-								<label>Nickname</label>
-								<input type="text" class="form-control" name="nickName" id="nickName" placeholder="Inserire il nickname" >
-							</div>
-							<div class="form-group col-md-3">
-								<label>Data di Nascita</label>
-                        		<input class="form-control" id="dataDiNascita" type="date" placeholder="dd/MM/yy"
-                            		title="formato : gg/mm/aaaa"  name="dataDiNascita" >
-							</div>
-							<div class="form-group col-md-3">
-								<label for="sesso">Sesso</label>
-							    <select class="form-control" id="sesso" name="sesso">
-							    	<option value="">Indifferente</option>
-							      	<option value="MASCHIO">M</option>
-							      	<option value="FEMMINA">F</option>
-							    </select>
-							</div>
-							
+						<div class="form-group col-md-6">
+							<label>Cognome</label>
+							<input type="text" name="cognome" id="cognome" class="form-control" placeholder="Inserire il cognome" >
 						</div>
-							
-						<button type="submit" name="submit" value="submit" id="submit" class="btn btn-primary">Conferma</button>
+					</div>
 					
-
-						<a class="btn btn-outline-primary ml-2" href="PrepareInsertRegistaServlet">Add New</a>
+					<div class="form-row">	
+						<div class="form-group col-md-6">
+							<label>Nickname</label>
+							<input type="text" class="form-control" name="nickName" id="nickName" placeholder="Inserire il nickname" >
+						</div>
+						<div class="form-group col-md-3">
+							<label>Data di Nascita</label>
+	                      		<input class="form-control" id="dataDiNascita" type="date" placeholder="dd/MM/yy"
+	                          		title="formato : gg/mm/aaaa"  name="dataDiNascita" >
+						</div>
+						<div class="form-group col-md-3">
+							<label for="sesso">Sesso</label>
+						    <select class="form-control" id="sesso" name="sesso">
+						    	<option value="">Indifferente</option>
+						      	<option value="MASCHIO">M</option>
+						      	<option value="FEMMINA">F</option>
+						    </select>
+						</div>
 						
-					</form>
+					</div>
+						
+					<button type="submit" name="submit" value="submit" id="submit" class="btn btn-primary">Conferma</button>
+				
+					<a class="btn btn-outline-primary ml-2" href="PrepareInsertRegistaServlet">Add New</a>
+					
+				</form>
 
-		    
-		    
 			<!-- end card-body -->			   
 		    </div>
 		</div>	

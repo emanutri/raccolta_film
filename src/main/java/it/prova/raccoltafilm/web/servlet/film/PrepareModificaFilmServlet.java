@@ -25,7 +25,7 @@ public class PrepareModificaFilmServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		String filmIdParameter = request.getParameter("idFilm");
 
 		FilmService filmService = MyServiceFactory.getFilmServiceInstance();
